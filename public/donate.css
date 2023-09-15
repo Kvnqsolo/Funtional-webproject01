@@ -1,0 +1,34 @@
+.form-container {
+    max-width: 400px;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.form-container:hover{
+    transform: scale(1.05);
+}
+.form-container .form-group {
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+}
+.donate

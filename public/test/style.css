@@ -1,0 +1,282 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 80px;
+    margin-top: 25px;
+    z-index: 1;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 15px;
+    background-color: #045dbd;
+    border-radius: 3px;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+.nav-links li{
+    margin-left: 25px;
+}
+.nav-links li a{
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.nav-links li a:hover{
+    color: #007bff;
+}
+.nav-links li .active{
+    color: #007bff;
+}
+.social-links a{
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.social-links a:hover{
+    color: #007bff;
+}
+.hero{
+    height: 100vh;
+    background-image: url(myself.jpg);
+    /* background-image:linear-gradient(rgba(150, 75, 100, 0.3),rgba(150, 75, 100, 0.3)), url(myself.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+.hero-content{
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+.hero-content h1{
+    font-size: 47px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.hero-content p{
+    font-size: 20px;
+    color: #323232;
+    margin-bottom: 30px;
+}
+.btn{
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: #045dbd;
+}
+.profile-card{
+    width: 100%;
+    background-image:linear-gradient(rgba(230, 230, 230, 0.3),rgba(150, 75, 100, 0.3));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f0f0f0;
+    border-radius: 1px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.profile-card:hover{
+    transform: scale(1.05);
+}
+.profile-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0px auto;
+    transition: 0.3s ease-in-out;
+}
+.profile-image:hover{
+    transform: rotate(360deg);
+}
+.profile-name{
+    margin-top: 10px;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+.profile-name:hover{
+    color: #045dbd;
+}
+.profile-description{
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.profile-card:hover .profile-description{
+    opacity: 1;
+}
+.profile-button{
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+.profile-button:hover{
+    background-color: #0a3562;
+}
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.form-container:hover{
+    transform: scale(1.05);
+}
+.form-container .form-group {
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+}
+
+.form-container input[type="submit"],
+.form-container input[type="reset"] {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover,
+.form-container input[type="reset"]:hover {
+    background-color: #00ff00;
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.flip-card {
+width: 300px;
+height: 400px;
+perspective: 1000px;
+}
+
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+border: none;
+border-radius: 10px;
+transition: transform 0.6s;
+transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+position: relative;
+bottom: 310px;
+width: 100%;
+height: 80%;
+backface-visibility: hidden;
+border-radius: 10px;
+}
+
+.flip-card-front {
+background-color: #f1f1f1;
+overflow: hidden;
+}
+.flip-card-front img{
+max-height: 100%;
+}
+.flip-card-back {
+background-color: #555;
+color: white;
+transform: rotateY(180deg);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card-content {
+padding: 20px;
+text-align: center;
+}
+
+.card-content h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.card-content p {
+font-size: 16px;
+margin-bottom: 20px;
+}
+
+.btn1 {
+padding: 10px 20px;
+background-color: #f1f1f1;
+color: #333;
+text-decoration: none;
+border-radius: 5px;
+}
+
+.btn1:hover {
+background-color: #333;
+color: #f1f1f1;
+}
+
+.attribute{
+position: absolute;
+bottom: 10px;
+}

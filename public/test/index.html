@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My Landing Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>My Art</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active" method="POST">Research</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Company</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://web.facebook.com/solo-ackermann"><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/kvnqsolo_1/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>What i've learnt so far</h1>
+            <p>I wondered in the land of the dead and the living to search for this moment when i finally try something like a landing page it was'nt damn easy, Just trust and believe in you're cretivity and follow the process.</p>
+            <a href="#" class="btn">Get started</a>
+        </div>
+    </section>
+
+
+    <div class="form-container">
+        <form class="two" action="kvnqsolo_Tech.php" method="POST">
+            <div class="form-group">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="onyedikachi" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="muodozie" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" maxlength="8" placeholder="*******" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="Phone" placeholder="+2347048570025" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="onyedikachimuodozie@gmail.com" required>
+            </div>
+
+            <!-- <div class="form-group">
+                <label for="tether">USDT.</label>
+                <input type="radio" name="title" id="tether">
+                <label for="bitcoin">BTC.</label>
+                <input type="radio" name="title" id="bitcoin">
+                <label for="ethereum">ETH.</label>
+                <input type="radio" name="title" id="ethereum">
+                <label for="bnb">BNB.</label>
+                <input type="radio" name="title" id="bnb">
+                <label for="dogecoin">DOGE.</label>
+                <input type="radio" name="title" id="dogecoin">
+                <label for="litecoin">LTC.</label>
+                <input type="radio" name="title" id="litecoin">
+                <label for="binance usd">BUSD.</label>
+                <input type="radio" name="title" id="binance usd">
+            </div> -->
+
+            <div class="form-group">
+                <label for="quantity">Donation:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="1000" placeholder="$1000">
+                <label for="payment">Payment:</label>
+                <select name="payment" id="payment">
+                    <option value="visa">visa</option>
+                    <option value="mastercard">mastercard</option>
+                    <option value="bank transfer">bank transfer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <a href="">Donate</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

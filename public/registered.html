@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Successfully registere</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            font-family: sans-serif;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 0.1s; 
+        }
+    </style>
+</head>
+<body>
+    <div class="success-message" id="success-message">
+        <img src="/login page with funtionality/assets/images/successful.gif" alt="Successfully-gif" id="success-gif">
+        <h1>Successfully registered!!!</h1>
+    </div>
+
+    <script>
+        // JavaScript to show the success message and hide the form
+        // const registrationForm = document.querySelector(".sub-form"); // Changed the element selection
+        const successMessage = document.getElementById("success-message");
+        const successGif = document.getElementById("success-gif");
+        let gifPlayed = false;
+
+        registrationForm.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+            // You can add your registration logic here
+
+            // Display the success message and hide the form
+            registrationForm.style.display = "none";
+            successMessage.style.display = "block";
+
+            // Play the GIF only once
+            if (!gifPlayed) {
+                successGif.src = "/login page with funtionality/assets/images/successful.gif";
+                gifPlayed = false;
+            }
+        });
+    </script>
+</body>
+</html>
